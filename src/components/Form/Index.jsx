@@ -8,13 +8,13 @@ class Form extends React.Component {
 
   render() {
     return (
-      <form>
+      <form className="pt-5">
         <Row>
           <Col>
             <SearchLocations />
           </Col>
         </Row>
-        <Row>
+        <Row className="pt-3">
           <Col>
           <Label>Off</Label>
             <SearchBeers />

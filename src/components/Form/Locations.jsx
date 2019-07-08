@@ -35,6 +35,7 @@ class SearchLocations extends React.Component {
   render() {
     return (
       <AsyncSelect
+        cacheOptions
         placeholder="Search Locations"
         value={this.state.label}
         loadOptions={this.searchLocations}
