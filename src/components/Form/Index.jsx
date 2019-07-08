@@ -1,14 +1,14 @@
 import React from "react";
-import { Row, Col, Label } from 'reactstrap';
+import { Form, Row, Col, Label, Button } from 'reactstrap';
 
 import SearchBeers from './Beers';
 import SearchLocations from './Locations';
 
-class Form extends React.Component {
+class UpdateForm extends React.Component {
 
   render() {
     return (
-      <form className="pt-5">
+      <Form className="pt-5">
         <Row>
           <Col>
             <SearchLocations />
@@ -24,9 +24,14 @@ class Form extends React.Component {
             <SearchBeers />
           </Col>
         </Row>
-      </form>
+        <Row className="pt-5">
+          <Col>
+            <Button>Update</Button>
+          </Col>
+        </Row>
+      </Form>
     );
   }
 }
 
-export default Form;
+export default UpdateForm;
