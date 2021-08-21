@@ -12,7 +12,7 @@ class SearchBeers extends React.Component {
   searchBeers = location => {
     let searchTerm = location;
 
-    const url = "https://www.phillytapfinder.com/wp-json/wp/v2/ptf_beers?";
+    const url = "https://d2w9ysu1vm5q9f.cloudfront.net/wp-json/wp/v2/beer?";
     const options = "";
     const query = `search=`;
     const urlRequest = `${url}${query}${searchTerm}${options}`;
